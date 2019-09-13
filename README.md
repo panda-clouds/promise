@@ -1,9 +1,9 @@
 
-<PCName>
+PCPromise
 =========
 maintained by [PandaClouds.com](https://pandaclouds.com)
 
-`<PCName>` provides a clean way to <description>.
+`PCPromise` provides utility functions for javascript promises and async/await.
 
 
 Installation
@@ -16,7 +16,7 @@ Installation
 3. Please run the following command.
 
 ```
-npm install --save @panda-clouds/<panda-blank>
+npm install --save @panda-clouds/promise
 ```
 
 Usage
@@ -25,13 +25,17 @@ Usage
 ### Node.js
 
 ```javascript
-const <PCName> = require('@panda-clouds/<panda-blank>');
+const PCPromise = require('@panda-clouds/promise');
 
 // example usage
+async () => {
+	await PCPromise.wait(5000) // pauses for 5 seconds without blocking the main thread
+}
+
 
 ```
 
-You can replace <PCName> with any variable.
+You can replace PCPromise with any variable.
 
 
 Methods
@@ -39,18 +43,16 @@ Methods
 
 [Unit Tests] are an additional resource for learning functionality.
 
-### - mustExist()
+### - wait()
 
-requires the property to be set,
-else throws error
+Pauses execution of that thread without blocking
 
 Example:
 
 ```javascript
-Parse.Cloud.beforeSave('Book', request =>{
-	const data = new <PCName>(request);
-	data.prop('title').mustExist();    // will throw Error if request.object.get('title') doesn't exist
-});
+async () => {
+	await PCPromise.wait(5000) // pauses for 5 seconds without blocking the main thread
+}
 ```
 
 
@@ -60,8 +62,8 @@ Contributions
 
 Pull requests are welcome! here is a checklist to speed things up:
 
-- modify `<PCName>.js`
-- add unit tests in `<PCName>.spec.js`
+- modify `PCPromise.js`
+- add unit tests in `PCPromise.spec.js`
 - run `npm test`
 - document method in `README.md`
 - add your name to 'Contributors' in `README.md`
@@ -74,4 +76,4 @@ Pull requests are welcome! here is a checklist to speed things up:
 - [*] [Marc Smith](https://github.com/mrmarcsmith)
 
 
-[Unit Tests]: https://github.com/panda-clouds/string/blob/master/spec/<PCName>.spec.js
+[Unit Tests]: https://github.com/panda-clouds/string/blob/master/spec/PCPromise.spec.js

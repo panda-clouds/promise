@@ -1,14 +1,14 @@
 {
-  "name": "@panda-clouds/<panda-blank>",
+  "name": "@panda-clouds/promise",
   "scripts": {
     "pretest": "eslint --fix .",
     "test": "jest"
   },
-  "description": "<description>",
+  "description": "A Util lib for js promises and async/await",
   "version": "0.1.0",
   "repository": {
     "type": "git",
-    "url": "https://github.com/panda-clouds/<panda-blank>.git"
+    "url": "https://github.com/panda-clouds/promise.git"
   },
   "author": {
     "name": "Marc Smith",
@@ -16,12 +16,12 @@
     "url": "https://github.com/mrmarcsmith"
   },
   "license": "MIT",
-  "main": "src/<PCName>.js",
+  "main": "src/PCPromise.js",
   "engines": {
     "node": ">= 8"
   },
   "devDependencies": {
-    "@panda-clouds/eslint-config-panda-clouds": "^0.9.0",
+    "@panda-clouds/eslint-config-panda-clouds": "^1.0.0",
     "eslint": "^6.2.0",
     "eslint-plugin-jasmine": "^2.10.1",
     "jest": "^24.9.0"
